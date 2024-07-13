@@ -4,43 +4,110 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="mediaQueries.css">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <link rel="icon" href="./assets/Portfolio_Profile1.jpg" type="image/x-icon">
 </head>
 <body>
 
     <nav id="desktop-nav">
         <div class="logo">Faizul Islam</div>
         <div>
-            <ul class="nav-links">
-               <li><a href="about">About</a></li>
-               <li><a href="experience">Experience</a></li>
-               <li><a href="projects">Projects</a></li>
-               <li><a href="contact">Contact</a></li>
-            </ul>
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
         </div>
-    </nav>
-
-    <nav id="hamburger-nav">
+      </nav>
+      <nav id="hamburger-nav">
         <div class="logo">Faizul Islam</div>
         <div class="hamburger-menu">
-            <div class="hamburger-icon" onclick="togglemenu()">
-                <span></span>
-                <span></span>
-                <span></span>
+          <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="menu-links">
+            <li><a href="#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+            <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+          </div>
+        </div>
+      </nav>
+
+    <section id="profile">
+
+        <div class="section__pic-container">
+            <img src="./assets/Portfolio_Profile1.jpg" alt="My profile picture" />
+          </div>
+          <div class="section__text">
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class="title">Faizul Islam</h1>
+            <p class="section__text__p2">Frontend Developer</p>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2"
+                onclick="window.open('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/2c110454-5b33-4416-bf9b-72992c7cb56f/d60eb1v-79212624-e842-4e55-8d58-4ac7514ca8e4.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzJjMTEwNDU0LTViMzMtNDQxNi1iZjliLTcyOTkyYzdjYjU2ZlwvZDYwZWIxdi03OTIxMjYyNC1lODQyLTRlNTUtOGQ1OC00YWM3NTE0Y2E4ZTQuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.9LDpLmLlbA507H7fKa8aEDxFr8k3SlwCGC1zuJ13d1w')"
+              >
+                Download CV
+              </button>
+              <button class="btn btn-color-1" onclick="location.href='./#contact'">
+                Contact Info
+              </button>
             </div>
-            <div class="menu-links">
-                <li><a href="about" onclick="togglemenu()">About</a></li>
-               <li><a href="experience" onclick="togglemenu()">Experience</a></li>
-               <li><a href="projects" onclick="togglemenu()">Projects</a></li>
-               <li><a href="contact" onclick="togglemenu()">Contact</a></li>
+
+            <div id="socials-container">
+                <img src="./assets/linkedin.png" alt="My Linkedin Profile"
+                class="icon" onclick="location.href='https://www.linkedin.com/in/faizul-islam-453b52257/'">
+
+                <img src="./assets/github.png" alt="My Github Profile"
+                class="icon" onclick="location.href='https://github.com/FaizzE'">
+
+                <img src="./assets/x-icon.jpeg" alt="My X Profile"
+                class="icon" onclick="location.href='https://x.com/theraat_'">
+
+            </div>
+
+    </section>
+
+    <section id="about">
+        <p class="section__text__p1">Get To Know More</p>
+        <p class="title">About Me</p>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img src="./assets/Selfie.jpg" alt="profile picture" class="about-pic"/>
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="./assets/experience.png" alt="experience icon" class="icon"
+                        />
+                        <h3>Experience</h3>
+                        <p> 6 Months+ <br/>FrontEnd Development</p>
+                    </div>
+                    <div class="details-container">
+                        <img src="./assets/education.png" alt="Education icon" class="icon"
+                        />
+                        <h3>Education</h3>
+                        <p>Bachelors Of Technology.<br/>Computer Science and Engineering</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p><b>A Frontend Developer builds and maintains user-facing parts of websites using HTML, CSS, JavaScript, and frameworks like React, Angular, and Vue.js. They ensure responsiveness, cross-browser compatibility, and accessibility, collaborating with designers and backend developers while using tools like Git and npm to streamline workflows and optimize performance.</b></p>
+                </div>
             </div>
         </div>
+        <img src="./assets/arrow.png" alt="arrow icon" class="icon-arrow" onclick="location.href='./experience'"/>
+    </section>
 
-    </nav>
+
+
+
+
+      <script src="script.js"></script>
     
-
-
-    <script src="script.js"></script>
 </body>
 </html>
