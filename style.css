@@ -9,7 +9,9 @@
 
 body {
   font-family: "Poppins", sans-serif;
-  background-color: white;
+  background-color: #FFDEE9;
+  background-image: linear-gradient(0deg, #FFDEE9 0%, #B5FFFC 100%);
+
 }
 
 html {
